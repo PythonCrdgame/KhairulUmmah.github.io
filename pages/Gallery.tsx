@@ -109,4 +109,26 @@ const Gallery: React.FC = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 via-emerald-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8">
-                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-5
+                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <span className="bg-emerald-500 text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-3 inline-block">
+                    {photo.category}
+                  </span>
+                  <h3 className="text-white font-bold text-2xl drop-shadow-md">{photo.title}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {filteredPhotos.length === 0 && (
+          <div className="text-center py-32">
+            <div className="text-6xl mb-4">📸</div>
+            <p className="text-gray-400 text-xl font-light">No memories found in this category yet.</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Gallery;

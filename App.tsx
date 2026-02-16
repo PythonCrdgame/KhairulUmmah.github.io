@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import AIAssistant from './components/AIAssistant';
-import Home from './pages/Home';
-import Gallery from './pages/Gallery';
-import About from './pages/About';
-import Auth from './pages/Auth';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
+import AIAssistant from './components/AIAssistant.tsx';
+import Home from './pages/Home.tsx';
+import Gallery from './pages/Gallery.tsx';
+import About from './pages/About.tsx';
+import Auth from './pages/Auth.tsx';
 
 const App: React.FC = () => {
   return (
